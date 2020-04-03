@@ -29,8 +29,8 @@ And will be necessary to create this collections:
 And include at least one document with the next structure: 
 
 **Collection: user:**
-
-´{
+```json
+{
     "_id" : "testUser",
     "password" : "$2a$10$8KmNZd6st1dCvtrU2pu0heTHTndDJDSZjW7M2btMlDbZm7vaWNNhu",
     "userUUID" : LUUID("274a6071-6687-2b1b-d87c-2279d07f5685"),
@@ -45,11 +45,13 @@ And include at least one document with the next structure:
     "credentialsNonExpired" : true,
     "enabled" : true,
     "_class" : "uk.co.caeldev.springsecuritymongo.domain.User"
-}´
+}
+```
 
 **Collection: mongoClientDetails**
 
-´{
+```
+{
     "_id" : "turist",
     "clientSecret" : "$2a$10$j6Xnq6JFmn/8kM8jcSPNNeqHzFgYQjsf3P/Ok8Xp/0X96iA7e3Cri",
     "scope" : [
@@ -81,6 +83,7 @@ And include at least one document with the next structure:
         ""
     ],
     "_class" : "uk.co.caeldev.springsecuritymongo.domain.MongoClientDetails"
-}´
+}
+```
 
 _PS. It's my first complete oauth server, so it's possible to find misconfigurations; and probabily, there are so many ways to improve this project. So, i don't recommend to use it as it is on this repository, but to take it as a basic example to understand the way oauth server works when using a different db server and how to integrate the services and repositories that are necessary to implement in that case. Don't forget to review the caelcs' source code to get a better overview of the server._
