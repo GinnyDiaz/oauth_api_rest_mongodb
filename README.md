@@ -10,6 +10,7 @@ On these links is more information and documentation about the available functio
 
 This project include more implementations to work with Restful web services and get a bearer token using the password and refresh-token grant-type; check the token validity and register a new user. It works great on a microservices architecture and mobile applications.
 
+# Database settings on mongodb
 To get this working with a mongodb server, it's necessary to create a database with the data set in the application.yml file. By default, the database connection setting are working with this data: 
 
 db.createUser(
@@ -28,8 +29,8 @@ And will be necessary to create this collections:
 And include at least one document with the next structure: 
 
 Collection: user:
-{
-    "_id" : "testUser",
+'{
+'    "_id" : "testUser",
     "password" : "$2a$10$8KmNZd6st1dCvtrU2pu0heTHTndDJDSZjW7M2btMlDbZm7vaWNNhu",
     "userUUID" : LUUID("274a6071-6687-2b1b-d87c-2279d07f5685"),
     "authorities" : [ 
