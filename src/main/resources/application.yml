@@ -1,0 +1,24 @@
+server:
+  port: 9080
+  servlet:
+    context-path: /auth
+
+mongo:
+  host: localhost
+  port: 27017
+  database: test_db
+  username: testUser
+  password: testPass
+  
+    
+auth:
+  baseUrl: /auth
+  authenticationUrl: /oauth/token
+  checkTokenUrl: /oauth/check_token
+  signUpUrl: /signup
+  resourcesUrl: /user
+
+info:
+  app:
+    name: oauth2
+    description: OAuth2 Provider
